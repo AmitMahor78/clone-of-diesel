@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin-left: -0.2px;
+            margin-right: -0.2px;
+            background-color: rgb(233, 240, 244);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #move {
+            color: red;
+            cursor: pointer;
+            margin-top: -5px;
+        }
+
+        #nav {
+            background-color: #e31f2e;
+            height: 60px;
+            width: 100%;
+            margin-top: -15px;
+
+        }
+
+        #nav ul {
+            display: flex;
+        }
+
+        #nav ul li {
+            padding-top: 20px;
+            color: rgb(255, 255, 255);
+            list-style: none;
+            padding-left: 55px;
+            font-size: 12px;
+        }
+
+        #nav uo li {
+            justify-content: right;
+
+        }
+
+        #logo1 {
+            margin-left: 232px;
+            height: 25px;
+            width: 25px;
+            padding: 2px;
+
+            border: 1px white solid;
+        }
+
+        #logo2 {
+            height: 25px;
+            padding: 2px;
+            width: 25px;
+            border: 1px white solid;
+        }
+
+        #logo3 {
+            height: 25px;
+            padding: 2px;
+            width: 25px;
+            border: 1px white solid;
+        }
+
+        #logo4 {
+            height: 25px;
+            padding: 2px;
+            width: 25px;
+            border: 1px white solid;
+        }
+
+        #logo5 {
+            height: 25px;
+            padding: 2px;
+            width: 25px;
+            border: 1px white solid;
+        }
+
+        #link {
+            font-size: 10px;
+            text-decoration: none;
+            color: rgb(42, 41, 41);
+        }
+
+        .link {
+            margin-left: 10px;
+        }
+
+        #h1 {
+            text-align: center;
+            font-size: 1.9rem;
+        }
+
+        #side {
+            padding-left: 40px;
+
+        }
+
+        .main-dropdown {
+            justify-content: space-around;
+            display: flex;
+            width: 700px;
+            margin-left: 290px;
+            padding-bottom: 15px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown #option {
+            height: 35px;
+            width: 120px;
+            border: none;
+            position: relative;
+            margin-top: -90px;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+        }
+
+        .dropdown-content {
+            display: none;
+        }
+
+        .dropdown :hover .dropdown-content {
+            display: block;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+        }
+        #img{
+            width: 380px;
+            height: 504px;
+        }
+        #five {
+            height: 120px;
+            background-color: rgb(192, 33, 33);
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin-top: 50px;
+        }
+        #logo {
+            display: flex;
+            justify-content: center;
+            margin-top: -20px;
+        }
+
+        #logo li {
+            list-style: none;
+        }
+
+        #logo li img {
+            width: 50px;
+        }
+        #six {
+            justify-content: space-around;
+            display: flex;
+            width: 100%;
+        }
+
+        #six ul {
+            justify-content: center;
+
+        }
+
+        #six ul li {
+            list-style: none;
+            font-size: 12px;
+            color: rgb(68, 65, 65);
+            padding-bottom: 30px;
+        }
+
+        #six ul li:hover {
+            text-decoration: underline;
+        }
+        a{
+
+            text-decoration: none;
+            color: white;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <marquee id="move" behavior="scroll" direction="left" scrollDelay="">Shop for 10,000 or Above and get additional 15%
+        off</marquee>
+    <!-- first str -->
+    <div class="container-fluid" id="nav">
+        <nav class="nav" id="">
+            <ul>
+                <li ><a href="http://127.0.0.1:5500/MAN.html">MAN</a></li>
+                <li><a href="http://127.0.0.1:5500/Woman.html">WOMAN</a></li>
+                <li><a href="http://127.0.0.1:5500/Kid.html">KID</a></li>
+                <li><a href="http://127.0.0.1:5500/SS25.html">SS25</a></li>
+                <li><a href="http://127.0.0.1:5500/sale.html">SALE</a></li>
+                <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/334/applications/5ead6538e2926050503b37cb/application/pictures/free-logo/original/cjLPSuOx5-logo-diesel-new.51e9cf7.svg"
+                    alt="Brand logo" style="height: 60px; padding-left: 110px; cursor: pointer;">
+                <!-- LOGOS start -->
+                <uo>
+                    <li>
+                        <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16" id="logo1">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16" id="logo2">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-question-circle" viewBox="0 0 16 16" id="logo3">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart" viewBox="0 0 16 16" id="logo4">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-bag" viewBox="0 0 16 16" id="logo5">
+                            <path
+                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                        </svg>
+                    </a>
+                    </li>
+                </uo>
+                <!-- LOGOS END -->
+            </ul>
+        </nav>
+    </div>
+    <!-- first end -->
+    <!-- second str -->
+    <div class="link">
+        <a href="http://127.0.0.1:5500/index1.html" id="link">HOME/ </a>
+        <a href="PRODUCT link" id="link">PRODUCT/ </a>
+        <a href="MENWER link" id="link" style="font-weight: bolder;">DEALS & OFFERS </a>
+    </div>
+    <!-- second end -->
+    <h1 id="h1">Deals & Offers</h1>
+    <!-- third str -->
+    <div id="side">FILTER BY</div>
+    <!-- first row start -->
+    <div class="main-dropdown">
+        <!--men str  -->
+        <div class="dropdown">
+            <button><select name="select" id="option">
+                    <option value=""> SELECT ME</option>
+            </button></select>
+            <div class="dropdown-content">
+                <label> <input type="checkbox">men</label>
+                <label> <input type="checkbox">woman</label>
+                <label> <input type="checkbox">unisex</label>
+            </div>
+        </div>
+        <!--category str  -->
+        <div class="dropdown">
+            <button><select name="select" id="option">
+                    <option value=""> category</option>
+            </button></select>
+            <div class="dropdown-content">
+                <label> <input type="checkbox">Accessories</label>
+                <label> <input type="checkbox">Apparel</label>
+                <label> <input type="checkbox">Footwear</label>
+            </div>
+        </div>
+        <!-- Product type -->
+        <div class="dropdown">
+            <button><select name="select" id="option">
+                    <option value=""> Product Type</option>
+            </button></select>
+            <div class="dropdown-content">
+                <label> <input type="checkbox">Bags & Wallets</label>
+                <label> <input type="checkbox">Beachwear</label>
+                <label> <input type="checkbox">Bottomwear</label>
+            </div>
+        </div>
+        <!-- product -->
+        <div class="dropdown">
+            <button><select name="select" id="option">
+                    <option value=""> Product</option>
+            </button></select>
+            <div class="dropdown-content">
+                <label> <input type="checkbox">Airpod Case</label>
+                <label> <input type="checkbox">Backpacks</label>
+                <label> <input type="checkbox">Belt</label>
+                <label> <input type="checkbox">Boxer</label>
+            </div>
+        </div>
+        <!-- primary color -->
+        <div class="dropdown">
+            <button><select name="select" id="option">
+                    <option value=""> Primary Colour</option>
+            </button></select>
+            <div class="dropdown-content">
+                <label> <input type="checkbox">Beige</label>
+                <label> <input type="checkbox">Black</label>
+                <label> <input type="checkbox">Multi</label>
+            </div>
+        </div>
+        <!-- Fit -->
+        <div class="dropdown">
+            <button><select name="select" id="option">
+                    <option value=""> Fit</option>
+            </button></select>
+            <div class="dropdown-content">
+                <label> <input type="checkbox">Boot Cut</label>
+                <label> <input type="checkbox">Loose</label>
+                <label> <input type="checkbox">Oversized</label>
+            </div>
+        </div>
+        <!-- Danim Type -->
+        <div class="dropdown">
+            <button><select name="select" id="option">
+                    <option value=""> Denim Type</option>
+            </button></select>
+            <div class="dropdown-content">
+                <label> <input type="checkbox">Ripped</label>
+                <label> <input type="checkbox">Solid</label>
+                <label> <input type="checkbox">Washed</label>
+            </div>
+        </div>
+    </div>
+    <!-- first row end -->
+    <!-- second row start -->
+    <div class="main-dropdown">
+        <!--men str  -->
+        <div class="dropdown">
+            <button><select name="select" id="option">
+                    <option value=""> Fragrence Family</option>
+            </button></select>
+            <div class="dropdown-content">
+                <label> <input type="checkbox">Citrus Notes</label>
+                <label> <input type="checkbox">Floral Notes</label>
+                <label> <input type="checkbox">Spicy Notes</label>
+            </div>
+        </div>
+        <!--category str  -->
+        <div class="dropdown">
+            <button><select name="select" id="option">
+                    <option value=""> Primary Meterial</option>
+            </button></select>
+            <div class="dropdown-content">
+                <label> <input type="checkbox">Acrylic</label>
+                <label> <input type="checkbox">Blended</label>
+                <label> <input type="checkbox">Cotton Blend</label>
+            </div>
+        </div>
+        <!-- Product type -->
+        <div class="dropdown">
+            <button><select name="select" id="option">
+                    <option value=""> Sustainable</option>
+            </button></select>
+            <div class="dropdown-content">
+                <label> <input type="checkbox">Regular</label>
+                <label> <input type="checkbox">Sustainable</label>
+            </div>
+        </div>
+        <!-- product -->
+        <div class="dropdown">
+            <button><select name="select" id="option">
+                    <option value=""> Pattern</option>
+            </button></select>
+            <div class="dropdown-content">
+                <label> <input type="checkbox">All Over Print</label>
+                <label> <input type="checkbox">Checked</label>
+                <label> <input type="checkbox">Dyed</label>
+                <label> <input type="checkbox">Logo</label>
+            </div>
+        </div>
+        <!-- primary color -->
+        <div class="dropdown">
+            <button><select name="select" id="option">
+                    <option value=""> Occasion</option>
+            </button></select>
+            <div class="dropdown-content">
+                <label> <input type="checkbox">Casual</label>
+                <label> <input type="checkbox">Casual Wear</label>
+            </div>
+        </div>
+        <!-- Fit -->
+        <div class="dropdown">
+            <button><select name="select" id="option">
+                    <option value=""> Neck Type</option>
+            </button></select>
+            <div class="dropdown-content">
+                <label> <input type="checkbox">Round Neck</label>
+                <label> <input type="checkbox">Turtle Neck</label>
+                <label> <input type="checkbox">V-Neck</label>
+            </div>
+        </div>
+        <!-- Danim Type -->
+        <div class="dropdown">
+            <button><select name="select" id="option">
+                    <option value=""> Sleeve Type</option>
+            </button></select>
+            <div class="dropdown-content">
+                <label> <input type="checkbox">Long Sleeves</label>
+                <label> <input type="checkbox">Short Sleeves</label>
+                <label> <input type="checkbox">Sleeveless</label>
+            </div>
+        </div>
+    </div>
+    <!-- second row END -->
+    <!-- third row start -->
+    <div class="main-dropdown">
+        <!--men str  -->
+        <div class="dropdown">
+            <button><select name="select" id="option">
+                    <option value=""> Sleeve Length</option>
+            </button></select>
+            <div class="dropdown-content">
+                <label> <input type="checkbox">Long</label>
+            </div>
+        </div>
+        <!--category str  -->
+        <div class="dropdown">
+            <button><select name="select" id="option">
+                    <option value="">Closure Type</option>
+            </button></select>
+            <div class="dropdown-content">
+                <label> <input type="checkbox">Button</label>
+                <label> <input type="checkbox">Zip</label>
+            </div>
+        </div>
+        <!-- Product type -->
+        <div class="dropdown">
+            <button><select name="select" id="option">
+                    <option value=""> Waist Rise</option>
+            </button></select>
+            <div class="dropdown-content">
+                <label> <input type="checkbox"> High Waist</label>
+                <label> <input type="checkbox">Low Waist</label>
+                <label> <input type="checkbox">Regular Waist</label>
+            </div>
+        </div>
+        <!-- product -->
+        <div class="dropdown">
+            <button><select name="select" id="option">
+                    <option value=""> Price</option>
+            </button></select>
+            <div class="dropdown-content">
+                <label> <input type="range">Choose Your Price</label>
+            </div>
+        </div>
+        <!-- primary color -->
+        <div class="dropdown">
+            <button><select name="select" id="option">
+                    <option value=""> Discount</option>
+            </button></select>
+            <div class="dropdown-content">
+                <label> <input type="range">Range</label>
+            </div>
+        </div>
+    </div>
+    <!-- third row End -->
+    <!-- third end -->
+     <!-- fourth str -->
+      <div class="container-fluid" id="four" style="background-color: white;">
+          <div id="imgs" style="display: inline-flex;"> 
+             <div><img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/resize-w:580/000000410372852008/jeWweU1jm-000000410372852008_1.jpg" alt="" id="img"><h5 style="margin-left: 20px;">$30,000 </h5><p style="font-size: 10px; margin-left: 20px; margin-top: -15px;">Light Gray 1998 D-Buck Bootcut Fit Jeans</p></div>
+            <div><img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/resize-w:580/diesel/A03594-09H73/0/1JPaUWHJIm-410374198010_1_6084.webp" alt="" id="img"><h5 style="margin-left: 20px;">$39,000 </h5><p style="font-size: 10px; margin-left: 20px; margin-top: -15px;">Light Gray 2030 D-Krooley Jogg Regular Fit Jeans</p></div><div>
+            <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/resize-w:580/diesel/A03594-0ENAH1/0/c9_04GGZie-410373741008_1_5117.webp" alt="" id="img"><h5 style="margin-left: 20px;">$18,000 </h5><p style="font-size: 10px; margin-left: 20px; margin-top: -15px;">Dark Blue Bootcut 2007 Zatiny L.32 Jeans</p>
+        </div><div>
+            <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/resize-w:580/diesel/A03625-007V9/0/bYHeFyMzHa-410372873007_1_5285.webp" alt="" id="img"><h5 style="margin-left: 20px;">$10,000 </h5><p style="font-size: 10px; margin-left: 20px; margin-top: -15px;">Black T-shirt With Metallic Oval D</p>
+        </div>
+        </div>
+      </div>
+     <!-- fourth end -->
+     <div class="container" id="five">
+        <h3>Connect with us on social media</h3>
+        <br>
+        <ul class="img" id="logo">
+            <li>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAsVBMVEXpOSz///////3oMSPifXfkNCXtpKLpLyHlY1v8//7v29n67+7ohX/lOyjlKBfuNi7aYFjijorcVU7jPCzaNCnkOTH//P/rKg/mvr/9+vXyMi7sLxvkSz7bbGbfhoHfnpffsbHlw7/er6nepJ7lmJHdTELpurHz4tj37+jbU0TkXE/00tLt0svdJhjUMzDmeXPutbLmbWLhVVnzw8LPS0LROynfEQDoqankNxzz5ObtkIk8Y9U1AAAEG0lEQVR4nO2dgVPaPhTHm4QYQ1fK2sEsFjYYdW7igO2nE///P+yXVNm0DcrW3fWl9/2Ipxw5733u9aXJM2IQAAAAAAAAAAAAAAAAAACgNaIoCkajJ8/NZxy3Fk4zJpMyclE+Sa2I1fOUNC1T80AgokAK6auNUErI8/eGc4OQQggpxUTItgP7U4QSaZ5MZx8+np2dzefzs4+LT8v73no4TIqi7eCOpSySVKh8OLv4nLE6PLvsfxFth3kkpiSUSGbz0AautX6uoi1s6MmMFgWT4OvyysbNTeic11JjZBKRth3nMcSBGr1dZZqXHybuSmbGjBu/ZOKHzKDYhMbARKzLJNRK5kGm7TiP4vp0xR0Kz31YQr9m0kioYahtsfgvE0SqyExaxl3ITKy+hXo8No8OyAh5xV65wvyRuf6gx12RUdtL1hUZmV6YG/4rte+LzGC9Y12RkdHmCA9PZO62/WOy4oeMXL62itmjycuIfP5CJuxtVPM9mdkCjF7/ke2htp8PqdiFp36ySzPffj9vO94XUb3swGWm7R7GvDTO9jCe0G5pjD4xx6bywSb8sZz+V9y823NzMyJdM9KWjFsm3Nzcvh8opeQjgVBth/syoui7LzEdTm+F8KvvJ5KdKzGahb3rtmP7Y9TQ1L/rMlukvrTIfqOmzLVb1llPkK51J6LHqk0l66JXX/1LjJVxzMyczXP/EnNQZjGK/ZrJLG4ZzX6mncmMZieyMzLcyLQd2V8AGapAhiqQoQpkqAIZqvgso6oMDsnURhoEnQ1bFMj8tMbSsdE0O83NsD70dJuTWUvLWK53/Rp67No3X9YH9vu7Xkply3Y3EW9dSXDKuDu265iKTBQbGV2BjQ/EzasjDRmdLkcUGBlexW3CWXmw6Tk6LKi0OKM4kHUZp8tj97k2dpcHpGQasSLTsvkHMhszmdGYm/+BzDKKiXSgGsrYOW+mHs+ltk7zzPCeonKosaHMmLFwq6isAJpmRrPdqaIynTWU4ZqtCkHlF7RNZTi7yOmsZhrJ2CXBgkr5N5fRbEln99k4M/p+0LbDL5rWDMvWdM40NJYxt5m2HX7R8DLjrJ90RcZk5qogMzOXzMI6rnMATGe1cdkipzObBamMk/s3VX46mxd6Xht4v21b4Ckjc6ENaqydiWEnt9WB17TOn0SOFp6YOY+bsBNZud3HMZX9f4kQaX09InruQ00nd5WBlEwO4XPjvAZkqAIZqkCGKpChCmSoAhmqQIYqkKEKZKgCGapAhiqQoQpkqAIZqkCGKpChCmSoAhmqQIYqkKEKZKgCGapAhirdk6njrYzzr059fUcg+66MDhnpw0HG57gzo7WXl5l8w7OsMzWTT4cuCh9l7AlhYf9Di33sv5qHny4AAAAAAAAAAAAAAAAAAADAxf8aD09b3qhZYwAAAABJRU5ErkJggg=="
+                    alt="">
+            </li>
+            <li>
+                <img src="data:image/jpeg;base64,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"
+                    alt="">
+            </li>
+            <li>
+                <img src="data:image/jpeg;base64,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"
+                    alt="">
+            </li>
+        </ul>
+    </div>
+     <div class="nav" id="six">
+        <ul>
+            <h4>HELP DESK</h4>
+            <li>Order Status</li>
+            <li>Delivery</li>
+            <li>Returns</li>
+            <li>Contact us</li>
+            <li>View All</li>
+        </ul>
+        <ul>
+            <h4>COOKIE POLICY & TERMS</h4>
+            <li>Privacy Policy</li>
+            <li>Shipping & Delivery Policy</li>
+            <li>Terms & Conditin</li>
+            <li>Returns & Refund Policy</li>
+            <li>Fees & Payment Policy</li>
+        </ul>
+        <ul>
+            <h4>WORLD OF DIESEL</h4>
+            <li>About Diesel</li>
+            <li>For Responsible Living</li>
+            <li>Only the Brave Foundation</li>
+            <li></li>
+        </ul>
+        <ul>
+            <h4> STORE LOCATION</h4>
+        </ul>
+    </div>
+</body>
+
+</html>
